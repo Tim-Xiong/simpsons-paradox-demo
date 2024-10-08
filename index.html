@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simpson's Paradox Detection Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Can You Spot Simpson's Paradox?</h1>
+        <p>Look at the data below and tell us whether Simpson's Paradox exists!</p>
+
+        <div class="table-container">
+            <table id="data-table">
+                <!-- Table will be populated by JavaScript -->
+            </table>
+        </div>
+
+        <div class="question-section">
+            <p>Does this data show Simpson's Paradox?</p>
+            <button onclick="submitAnswer(true)">Yes</button>
+            <button onclick="submitAnswer(false)">No</button>
+        </div>
+
+        <div id="result-section" class="hidden">
+            <p id="result-text"></p>
+            <p id="explanation-text" class="hidden"></p>
+        </div>
+
+        <button id="restart-button" class="hidden" onclick="restartGame()">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
